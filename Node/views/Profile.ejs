@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Profile Page</title>
+    </head>
+    <body>
+        <%- include('common/nav'); -%>
+        <h1>
+
+            Welcome! Mr <%=name%> 
+        </h1>
+        <h3>
+            Email: <%=data.email%>
+        </h3>
+        <h3>
+            Address: <%=data.address%>
+        </h3>
+        <ul>
+            <%data.skills.forEach(function(x){%>
+                <li><%=x%></li>
+                <%})%>
+        </ul> 
+    </body>
+</html>
